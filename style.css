@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.pricecard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247, 247, 255);
+    height: 80%;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image-1 img{
+    position: absolute;
+    right: -5rem;
+    top: 0rem;
+}
+
+.background-image-2 img{
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price-title {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(102, 102, 129);
+    font-size: 2rem;
+    margin-top: 3rem;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    z-index: 1;
+}
+
+.toggle-btn {
+    margin: 0 1rem;
+}
+
+.toggle-name {
+    color: rgb(63, 65, 86);
+    font-size: 1.5rem;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 25rem;
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 27rem;
+    width: 20rem;
+    background-color: rgb(157, 160, 239);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    z-index: 1;
+}
+
+.master {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 25rem;
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.monthly {
+    display: none;
+}
+
+.specification {
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    color: rgb(100, 101, 129);
+    text-align: center;
+}
+
+.specification-pro {
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.title {
+    margin-top: 0.5rem;
+    color: rgb(100, 101, 129);
+    font-weight: bold;
+}
+
+.title-pro {
+    margin-top: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(63, 65, 86);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.price-pro {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    background-color: rgb(157, 160, 239);
+    color: aliceblue;
+    text-align: center;
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
+    color: rgb(157, 160, 239);
+    background-color: aliceblue;
+    border: 0.1rem solid rgb(157, 160, 239);
+}
+.professional-btn {
+    background-color: aliceblue;
+    color: rgb(157, 160, 239);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.professional-btn:hover {
+    background-color: rgb(157, 160, 239);
+    color: aliceblue;
+    border: 0.1rem solid aliceblue;
+}
+
+
+.bottom-bar {
+    border-bottom: rgb(173, 173, 194) solid 0.1rem;
+    width: 15rem;
+}
+
+.bottom-bar-pro {
+    border-bottom: white solid 0.1rem;
+    width: 15rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 561px) {
+    html{
+        font-size: 10px;
+    }
+    .background-image-1 img{
+        right: -15rem;
+        top: 0rem;
+    }
+    .background-image-2 img{
+        bottom: -10rem;
+        left: -10rem;
+    }
+}
+@media (max-width: 561px) {
+    html{
+        font-size: 10px;
+    }
+    .container{
+        height: auto;
+    }
+    .price-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .background-image-1 {
+        display: none;
+    }
+    .background-image-2 {
+        display: none;
+    }
+}
+

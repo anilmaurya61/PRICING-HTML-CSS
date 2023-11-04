@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price Card</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="toggle.css">
+</head>
 
-    <title>Pricing component</title>
+<body>
+  <div class="container">
+    <div class="pricecard-container">
+      <p class="background-image-1"><img src="./images/bg-top.svg" alt="background Image"></p>
+      <div class="background-image-2"><img src="./images/bg-bottom.svg" alt="background Image"></div>
+      <header class="price-card">
+        <div class="price-title">Our Pricing</div>
+        <div class="toggle-container">
+          <label class="toggle-name">Annually</label>
+          <div class="toggle-btn">
+            <label class="switch">
+              <input type="checkbox" id="mytoggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <label class="toggle-name">Monthly</label>
+        </div>
+      </header>
+      <div class="price-container">
+        <div class="basic">
+          <div class="title">Basic</div>
+          <div class="price monthly bottom-bar"><small>$</small>19.99</div>
+          <div class="price annually bottom-bar"><small>$</small>199.99</div>
+          <div class="specification bottom-bar">500 GB Storage</div>
+          <div class="specification bottom-bar">2 Users Allowed</div>
+          <div class="specification bottom-bar">Send up to 3 GB</div>
+          <div class="learnmore-btn">
+            <button class="btn">LEARN MORE</button>
+          </div>
+        </div>
+        <div class="professional">
+          <div class="title-pro">Professional</div>
+          <div class="price-pro monthly bottom-bar-pro"><small>$</small>24.99</div>
+          <div class="price-pro annually bottom-bar-pro"><small>$</small>249.99</div>
+          <div class="specification-pro bottom-bar-pro">1 TB Storage</div>
+          <div class="specification-pro bottom-bar-pro">5 Users Allowed</div>
+          <div class="specification-pro bottom-bar-pro">Send up to 10 GB</div>
+          <div class="learnmore-btn">
+            <button class="btn professional-btn">LEARN MORE</button>
+          </div>
+        </div>
+        <div class="master">
+          <div class="title">Master</div>
+          <div class="price monthly bottom-bar"><small>$</small>39.99</div>
+          <div class="price annually bottom-bar"><small>$</small>399.99</div>
+          <div class="specification bottom-bar">2 TB Storage</div>
+          <div class="specification bottom-bar">10 Users Allowed</div>
+          <div class="specification bottom-bar">Send up to 20 GB</div>
+          <div class="learnmore-btn">
+            <button class="btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
 </html>
